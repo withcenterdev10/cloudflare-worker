@@ -24,7 +24,7 @@ export default {
 
 		async fetch(): Promise<Response> {
 		const headers = new Headers();
-		// headers.set("Access-Control-Allow-Origin", "*");
+		headers.set("Access-Control-Allow-Origin", "*");
 		headers.set('Content-Type', 'application/json');
 
 		return new Response(JSON.stringify({ message: 'I am from WithCenter!', name: 'Hermo' }), {
